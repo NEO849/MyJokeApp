@@ -58,9 +58,11 @@
     2. fragment_home.xml
         * Button gesetzt, bei Klick wird zum JokeFragment navigiert
     3. in der fragment_joke.xml
-        * Horizontale Recyclerview für die Witze Kategorie_Auswahl
-        * Vertikale Recyclerview für die Witze selbst setzen
-    4. in der list_item_joke.xml
+        * Recyclerview (Horizontale) für die Witze Kategorie_Auswahl
+        * Recyclerview (Vertikale) für die Witze selbst setzen
+    4. in der category_joke.xml
+        * die Ansicht der Auswahl Ansicht definieren
+    5. in der list_item_joke.xml
         * die Ansicht eines einzelnen Witzes definieren
 
 #### IV.
