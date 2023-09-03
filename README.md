@@ -66,7 +66,7 @@
         * Verarbeitet die Klicks auf die Kategorie-Elemente und informiert das JokeCategoryViewModel über die ausgewählte Kategorie
 #### V.     category_joke.xml erstellen  --> hier wird das Layout der HorizontalRV für die Witze Auswahl definiert
 #### VI. HomeFragment.kt einen onClickListener auf den Witze Button setzen, damit zum fragment_joke navigiert werden kann
-#### VII.
+#### VII. Adapter im JokeFragment initialisieren
 #### VIII.
 #### IX.
 #### X.     
