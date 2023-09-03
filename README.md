@@ -45,11 +45,23 @@
 
 ### **Vorgehensweise**
 #### I.     Manifest: Internetgenehmigung setzen
-#### II.    gradle(:app): dependecies setzen und viewBinding aktivieren
-#### III.   Packages erstellen, UI- Layout definieren
+#### I.     Packages erstellt
+#### I.     gradle(:app): dependecies setzen und viewBinding aktivieren
+#### II.    Navigation
+    - im ui-Paket HomeFragment und JokeFragment erstellt
+        * ganz Simpel, im HomeFragment einfache Auswahl mittels Button, zur Übung lediglich Joke BTN mit Funktion
+        * JokeFragment werden die Witze angezeigt und man kann eine Witze Kategorie auswählen (mittels zwei Recyclerviews- horizontal und vertical scrollbar)
+    - nav_graph erstellen und Navigation einrichten
+#### III.   UI- Layout definieren
     1. in der activity_main.xml 
+        * FragmentContainerView setzen, damit das was ich im nav_graph als Homescreen definiert habe angezeigt wird
+    2. fragment_home.xml
+        * Button gesetzt, bei Klick wird zum JokeFragment navigiert
+    3. in der fragment_joke.xml
         * Horizontale Recyclerview für die Witze Kategorie_Auswahl
-        * fragment_container worin die Witze angezeigt werden
+        * Vertikale Recyclerview für die Witze selbst setzen
+    4. in der list_item_joke.xml
+        * die Ansicht eines einzelnen Witzes definieren
 
 #### IV.
 #### V.

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">My Joke App</string>
+
+    <string name="text_copyright">\u00A9 2023 Michael F. Junior</string>
+    <string name="text_appversion">Version 1.0.1</string>
+
+    <string name="button_joke">Witze</string>
+    <string name="button_zitats">Zitate</string>
+    <string name="button_horoskop">Horoskop</string>
+    <string name="button_musik">Musik</string>
+
 </resources>
