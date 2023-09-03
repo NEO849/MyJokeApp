@@ -56,19 +56,21 @@
     1. in der activity_main.xml 
         * FragmentContainerView setzen, damit das was ich im nav_graph als Homescreen definiert habe angezeigt wird
     2. fragment_home.xml
-        * Button gesetzt, bei Klick wird zum JokeFragment navigiert
+        * Button gesetzt, bei Klick soll später zum JokeFragment navigiert werden
     3. in der fragment_joke.xml
         * Recyclerview (Horizontale) für die Witze Kategorie_Auswahl
-        * Recyclerview (Vertikale) für die Witze selbst setzen
-    4. in der category_joke.xml
-        * die Ansicht der Auswahl Ansicht definieren
-    5. in der list_item_joke.xml
-        * die Ansicht eines einzelnen Witzes definieren
-
-#### IV.
+        * FragmentContainerView gesetzt: Recyclerview (Vertikale) für die Witze selbst
+#### IV. Adapter für die Witze Kategorie erstellen
+    - Ist Für die Darstellung der verschiedenen Witze-Kategorien in der horizontalen RecyclerView innerhalb des JokeFragment verantwortlich
+    -  Verarbeitet die Klicks auf die Kategorie-Elemente und informiert das JokeCategoryViewModel über die ausgewählte Kategorie
 #### V.
 #### VI.
 #### VII.
 #### VIII.
 #### IX.
 #### X.     
+
+-. in der category_joke.xml
+* die Ansicht der Auswahl Ansicht definieren
+-. in der list_item_joke.xml
+* die Ansicht eines einzelnen Witzes definieren
