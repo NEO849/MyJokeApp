@@ -61,17 +61,17 @@
         app:layout_constraintTop_toBottomOf="@+id/horoskopBTN" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/directedTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/text_copyright"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintBottom_toTopOf="@+id/versionTV"
+        app:layout_constraintEnd_toEndOf="@+id/versionTV"
+        app:layout_constraintStart_toStartOf="@+id/versionTV" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/versionTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
