@@ -1,8 +1,10 @@
 # Joke App
 
 ### **Übersicht**
-
-Diese App ist eine einfache Android-Anwendung, die Witze von einer externen API abruft und sie dem Benutzer anzeigt. Die App ist in Kotlin geschrieben und folgt der MVVM-Architektur. Sie verwendet auch ViewBinding für die Benutzeroberfläche und Room für die lokale Datenbank.
+* Diese App ist eine einfache Android-Anwendung, die Witze von einer externen API abruft und sie dem Benutzer anzeigt. 
+* Die App ist in Kotlin geschrieben und folgt der MVVM-Architektur. 
+* Sie verwendet ViewBinding für die Benutzeroberfläche und Room für die lokale Datenbank.
+* Navigation Component wird verwendet, macht es einfach zwischen Fragmenten zu navigieren.
 
 ### **Warum diese Architektur und Technologien?**
 * MVVM (Model-View-ViewModel): Eine Architektur, die die Trennung von Logik und Benutzeroberfläche erleichtert.
@@ -30,11 +32,25 @@ Diese App ist eine einfache Android-Anwendung, die Witze von einer externen API 
         * JokeResponse.kt: Datenmodell für die API-Antwort.
         * JokeDao.kt: Definiert die Methoden für den Zugriff auf die Room-Datenbank.
         * AppDatabase.kt: Initialisiert die Room-Datenbank.
+    - Packages 
+        * ui: Enthält alle UI-bezogenen Klassen und Fragmente.
+        * adapter: Enthält den RecyclerView-Adapter für die Witze-Liste.
+        * data: Enthält Klassen für die Datenverwaltung, einschließlich des Repositories und der API-Service-Klassen.
+        * datamodels: Enthält die Datenmodelle.
+    - Bibliotheken, Tools
+        * Navigation Component**: Für die Navigation zwischen Fragmenten.
+        * Volley: Für Netzwerkanfragen an die Jokes API.
+        * ViewModel und LiveData**: Für die Verwaltung von UI-bezogenen Daten.
+        * RecyclerView: Für die Anzeige der Witze in einer Liste.
 
 ### **Vorgehensweise**
 #### I.     Manifest: Internetgenehmigung setzen
 #### II.    gradle(:app): dependecies setzen und viewBinding aktivieren
-#### III.   UI- Layout definieren
+#### III.   Packages erstellen, UI- Layout definieren
+    1. in der activity_main.xml 
+        * Horizontale Recyclerview für die Witze Kategorie_Auswahl
+        * fragment_container worin die Witze angezeigt werden
+
 #### IV.
 #### V.
 #### VI.
