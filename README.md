@@ -34,7 +34,7 @@
         * AppDatabase.kt: Initialisiert die Room-Datenbank.
     - Packages 
         * ui: Enthält alle UI-bezogenen Klassen und Fragmente.
-        * adapter: Enthält den RecyclerView-Adapter für die Witze-Liste.
+        * adapter: Enthält den RecyclerView-Adapter für die Witze-Liste und ein Adapter für die Kategorie Auswahl
         * data: Enthält Klassen für die Datenverwaltung, einschließlich des Repositories und der API-Service-Klassen.
         * datamodels: Enthält die Datenmodelle.
     - Bibliotheken, Tools
@@ -48,10 +48,10 @@
 #### I.     Packages erstellt
 #### I.     gradle(:app): dependecies setzen und viewBinding aktivieren
 #### II.    Navigation
-    - im ui-Paket HomeFragment und JokeFragment erstellt
+    1. im ui-Paket HomeFragment und JokeFragment erstellt
         * ganz Simpel, im HomeFragment einfache Auswahl mittels Button, zur Übung lediglich Joke BTN mit Funktion
         * JokeFragment werden die Witze angezeigt und man kann eine Witze Kategorie auswählen (mittels zwei Recyclerviews- horizontal und vertical scrollbar)
-    - nav_graph erstellen und Navigation einrichten
+    2. nav_graph erstellen und Navigation einrichten
 #### III.   UI- Layout definieren
     1. in der activity_main.xml 
         * FragmentContainerView setzen, damit das was ich im nav_graph als Homescreen definiert habe angezeigt wird
@@ -60,10 +60,11 @@
     3. in der fragment_joke.xml
         * Recyclerview (Horizontale) für die Witze Kategorie_Auswahl
         * FragmentContainerView gesetzt: Recyclerview (Vertikale) für die Witze selbst
-#### IV. Adapter für die Witze Kategorie erstellen
-    - Ist Für die Darstellung der verschiedenen Witze-Kategorien in der horizontalen RecyclerView innerhalb des JokeFragment verantwortlich
-    -  Verarbeitet die Klicks auf die Kategorie-Elemente und informiert das JokeCategoryViewModel über die ausgewählte Kategorie
-#### V.
+#### IV.    Adaper-Paket
+    - CategoryAdapter.kt für die Witze Kategorie erstellen
+        * Ist Für die Darstellung der verschiedenen Witze-Kategorien in der horizontalen RecyclerView innerhalb des JokeFragment verantwortlich
+        * Verarbeitet die Klicks auf die Kategorie-Elemente und informiert das JokeCategoryViewModel über die ausgewählte Kategorie
+#### V.     category_joke.xml erstellen  --> hier wird das Layout der HorizontalRV für die Witze Auswahl definiert
 #### VI.
 #### VII.
 #### VIII.
