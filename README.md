@@ -72,7 +72,7 @@
     3. Adapter initialisieren
     4. LayoutManager für die RecyclerViews setzen --> Dadurch wird festgelegt, wie die Elemente innerhalb der RecyclerViews angeordnet werden
     5. Adapter für die Kategorien-RecyclerView setzen --> Ist für die Darstellung der Daten zuständig
-#### VIII.
+#### VIII. 
 #### IX.
 #### X.     
 
