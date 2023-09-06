@@ -60,18 +60,19 @@
     3. in der fragment_joke.xml
         * Recyclerview (Horizontale) für die Witze Kategorie_Auswahl
         * FragmentContainerView gesetzt: Recyclerview (Vertikale) für die Witze selbst
-#### IV.    Adaper-Paket
+#### IV.   Im Adaper-Pakage
     - CategoryAdapter.kt für die Witze Kategorie erstellen
         * Ist Für die Darstellung der verschiedenen Witze-Kategorien in der horizontalen RecyclerView innerhalb des JokeFragment verantwortlich
         * Verarbeitet die Klicks auf die Kategorie-Elemente und informiert das JokeCategoryViewModel über die ausgewählte Kategorie
-#### V.     category_joke.xml erstellen  --> hier wird das Layout der HorizontalRV für die Witze Auswahl definiert
-#### VI. HomeFragment.kt einen onClickListener auf den Witze Button setzen, damit zum fragment_joke navigiert werden kann
-#### VII. weiteren Adapter für/und list_joke.xml erstellen
+#### V.     category_joke.xml erstellen  --> hier wird das Layout der HorizontalRV für die Kategorie Witze Auswahl definiert
+#### VI.    HomeFragment.kt einen onClickListener auf den Witze Button setzen, damit zum fragment_joke navigiert werden kann
+#### VII.   Im JokeFragment.kt wird die Logik des Screens definiert und die Daten befüllt --> Steuerzentrale für diesen einen Screen
+    1. JokeFragment einbinden und initialisieren
+    2. zum Testen Dummy Daten erstellt
+    3. Adapter initialisieren
+    4. LayoutManager für die RecyclerViews setzen --> Dadurch wird festgelegt, wie die Elemente innerhalb der RecyclerViews angeordnet werden
+    5. Adapter für die Kategorien-RecyclerView setzen --> Ist für die Darstellung der Daten zuständig
 #### VIII.
 #### IX.
 #### X.     
 
--. in der category_joke.xml
-* die Ansicht der Auswahl Ansicht definieren
--. in der list_item_joke.xml
-* die Ansicht eines einzelnen Witzes definieren

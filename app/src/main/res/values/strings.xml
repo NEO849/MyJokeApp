@@ -9,4 +9,8 @@
     <string name="button_horoskop">Horoskop</string>
     <string name="button_musik">Musik</string>
 
+    <string name="categoryJoke">Kategorie</string>
+    <string name="joke">Witz</string>
+
+
 </resources>
