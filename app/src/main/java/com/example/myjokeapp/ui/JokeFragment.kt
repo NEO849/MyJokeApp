@@ -26,7 +26,7 @@ class JokeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val categorys = listOf("Kategorie 1", "Kategorie 2", "Kategorie 3", "Kategorie 4", "Kategorie 5", "Kategorie 6")              // Dummy-Daten für die Kategorien
+        val categorys = listOf("Alle","Coden", "Verschiedenes", "Düster", "Wortspiele", "Gespenstisch", "Weihnachten")              // Dummy-Daten für die Kategorien
         val jokes = listOf("Witz 1", "Witz 2", "Witz 3", "Witz 4", "Witz 5", "Witz 6", "Witz 7", "Witz 8", "Witz 9", "Witz 10")
 
         val categoryAdapter = CategoryAdapter(categorys)                                // Initialisiert den CategoryAdapter

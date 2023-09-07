@@ -9,7 +9,7 @@
 ### **Warum diese Architektur und Technologien?**
 * MVVM (Model-View-ViewModel): Eine Architektur, die die Trennung von Logik und Benutzeroberfläche erleichtert.
 * ViewBinding: Eine effiziente Methode zum Zugriff auf UI-Elemente ohne findViewById.
-* Volley (nutzt eingebautes Caching und Funktionen wie- Bild-Downloads, Abbrechen von Anfragen usw.): Eine Bibliothek für Netzwerkanfragen, die die Arbeit mit APIs vereinfacht.
+* Retrofit: Übernimmt die Kommunikation mit dem Server und übersetzt die Antwort in Kotlin Objekte
 * Room: Eine SQLite-Abstraktion, die den Umgang mit Datenbanken in Android erleichtert.
 
 ### **Geplante Features**
@@ -39,8 +39,9 @@
         * datamodels: Enthält die Datenmodelle.
     - Bibliotheken, Tools
         * Navigation Component**: Für die Navigation zwischen Fragmenten.
-        * Volley: Für Netzwerkanfragen an die Jokes API.
-        * ViewModel und LiveData**: Für die Verwaltung von UI-bezogenen Daten.
+        * Retrofit: Für Netzwerkanfragen an die Jokes API, erleichtert die Integration und den Umgang mit APIs. 
+        * Moshi: Dient dazu JSON-Antworten in Kotlin- oder Java-Objekte umzuwandeln. Dies ist besonders nützlich, um die Datenmodelle (im datamodels Paket) mit den tatsächlichen Daten zu befüllen.
+        * ViewModel und LiveData: Für die Verwaltung von UI-bezogenen Daten.
         * RecyclerView: Für die Anzeige der Witze in einer Liste.
 
 ### **Vorgehensweise**
@@ -72,7 +73,17 @@
     3. Adapter initialisieren
     4. LayoutManager für die RecyclerViews setzen --> Dadurch wird festgelegt, wie die Elemente innerhalb der RecyclerViews angeordnet werden
     5. Adapter für die Kategorien-RecyclerView setzen --> Ist für die Darstellung der Daten zuständig
-#### VIII. 
-#### IX.
-#### X.     
+
+### Datenmanagement (Livedata, Retrofit, Moshi, API-Calls):
+#### I. Datenmodelle Joke und Jokelist erstellen
+    * definieren Form und Struktur in die die Empfangenen API Antworten umgewandelt werden
+    * das ermöglicht eine einfachere und sicherere Handhabung der Daten 
+
+
+Hier weiter -->
+
+#### II. JokeViewModel erstellen
+    * vermittelt zwischen der UI und den Datenmodellen
+    * muss eine LiveData-Liste für beide RecyclerViews haben: eine für die Kategorien und eine für die Witze
+#### III.     
 

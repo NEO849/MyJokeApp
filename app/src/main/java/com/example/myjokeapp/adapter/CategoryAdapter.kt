@@ -19,7 +19,7 @@ class CategoryAdapter(private val categorys: List<String>) : RecyclerView.Adapte
 
     // onBindViewHolder wird aufgerufen, um den Inhalt eines ViewHolders zu füllen.
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-        // Holt den Kategorienamen aus dem dataset
+        // Holt den Kategorienamen mittels der position aus dem dataset
         val category = categorys[position]
 
         // Setze den Text des TextViews im ViewHolder
